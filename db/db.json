@@ -3,7 +3,7 @@
     {
       "id": 1,
       "task": "buy milk",
-      "complited": false
+      "complited": true
     },
     {
       "task": "buy bread",
@@ -19,6 +19,11 @@
       "task": "buy salo",
       "complited": false,
       "id": 4
+    },
+    {
+      "task": "buy eggs",
+      "complited": false,
+      "id": 5
     }
   ]
 }

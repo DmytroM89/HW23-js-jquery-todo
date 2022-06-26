@@ -1,11 +1,11 @@
 class TodoList {
-    constructor(url) {
+    constructor(url, input, list) {
         this.url = url;
-        this.$input = $('#input');
-        this.$list = $('#list');
+        this.$input = input;
+        this.$list = list;
 
-        $('#todo').on('click', (e) => {
-            switch (e.target.dataset.action) {
+        $('#todo').on('click', 'button', (e) => {
+            switch ($(e.target).data('action')) {
                 case 'status':
                     const id = $(e.target).closest('li').data('id');
                     const status = $(e.target).closest('li').data('status');
@@ -105,5 +105,5 @@ class TodoList {
     }
 }
 
-const todo = new TodoList('http://localhost:3000/todos');
+const todo = new TodoList('http://localhost:3000/todos', $('#input'), $('#list'));
 todo.getTodos();
