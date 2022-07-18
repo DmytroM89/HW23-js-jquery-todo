@@ -12,13 +12,8 @@
     },
     {
       "task": "buy sugar",
-      "complited": false,
+      "complited": true,
       "id": 3
-    },
-    {
-      "task": "buy salo",
-      "complited": false,
-      "id": 4
     },
     {
       "task": "buy eggs",
